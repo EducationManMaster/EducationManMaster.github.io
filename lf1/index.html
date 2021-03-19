@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<!--
+Kommentar von Jan:
+
+Ja dieser Website ist komplett von Hand geschrieben und es war der absolute horror...
+Danke der Nachfrage.
+-->
+
+<html lang="de" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/aurubis.css">
+  <link rel="stylesheet" href="css/it.css">
+  <link rel="stylesheet" href="css/env.css">
+
+</head>
+
+<body>
+
+  <div id="browserCheck">
+
+    <div id="browserCheck_info">
+
+      <div class="browserCheck_icon" id="browserCheck_chrome"></div><br>
+      <div id="browserCheck_header">Alles bereit!</div><br>
+      <div id="bs_button" onclick="letsGO();">Los gehts!</div>
+
+    </div>
+
+  </div>
+
+  <div class="slide" id="slide_welcome">
+
+    <div class="slide_main" >
+
+      <div class="slide_next" id="welcome_next" onclick="scrollSide('slide_aurubis'); ar_animations();"></div>
+
+      <div id="wc_blue"></div>
+
+      <div id="wc_circles"></div>
+      <div id="wc_title"></div>
+
+
+      <div id="wc_bottom"></div>
+      <div id="wc_circle"></div>
+
+      <div id="wc_t_wrapper">
+      <div id="wc_more" onclick="scrollDown('slide_welcome');">&#709; Mehr Erfahren</div>
+      <div id="wc_text">Dies ist der digitale Messestand von Aurubis! Aufgrund der aktuellen Pandemie werden wir dieses Jahr keinen traditionellen Messestand anbieten, stattdessen haben wir diese interaktive Informationswebsite erstellt. Klicken Sie auf mehr erfahren bzw. auf Weiter (rechts), um fortzufahren.</div>
+      </div>
+
+    </div>
+
+    <div class="slide_more" id="wc_more_slide">
+
+      <div class="slide_more_header"></div>
+
+      <div class="more_header">
+
+        <div class="more_title">Der Digitale Messestand von Aurubis</div>
+        <div class="more_back" onclick="scrollUp('slide_welcome');">Zur Übersicht</div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_pic" id="wc_me"></div>
+        <div class="left_tit">Hallo & Willkommen bei Aurubis!</div>
+        <div class="left_txt">Hallo, mein Name ist Jan und ich bin Auszubildender bei Aurubis.
+        <br>
+        Auf dieser Website findet ihr viele Nützliche Informationen über Aurubis, eines der größten Deutschen Unternehmen. Diese Website dient als Alternative zu einem traditionellen Messestand, der aufgrund der aktuellen COVID-19-Pandemie nicht betrieben werden kann.
+        <br>
+        Auf den weiteren Sektionen erhaltet ihr Infos über:</div>
+
+        <ul class="left_bullet">
+          <li>Aurubis das Unternehmen</li>
+          <li>Nachhaltigkeit</li>
+          <li>Aurubis & IT?</li>
+        </ul>
+
+      </div>
+
+      <div class="sl_more more_right">
+
+        <div class="right_pic" id="wc_q"></div>
+        <div class="right_tit">Warum?</div>
+        <div class="right_txt">Diese Website wurde für das Lernfeld-1 an der BS14 ITCEH Berufsschule erstellt. Sie dient als Aufbereitung eines Medienproduktes.</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slide" id="slide_aurubis">
+
+    <div class="slide_bg_img" id="ar_bg"></div>
+    <div id="ar_tit">Aurubis das Unternehmen</div>
+
+    <div class="slide_main" id="main_aurubis">
+
+      <div class="slide_main_blur" id="ar_bg"></div>
+      <div class="slide_main_blur_opacity"></div>
+      <div id="ar_logo"></div>
+
+      <div class="slide_next" id="aurubis_next" onclick="scrollSide('slide_env'); env_animations();"></div>
+      <div class="slide_prev" id="aurubis_prev" onclick="scrollSide('slide_welcome');"></div>
+
+      <div id="ar_info">
+        <div id="ar_info_more" onclick="scrollDown('slide_aurubis');">&#709; Mehr Erfahren</div>
+        <div id="ar_info_text">Aurubis produziert aus Kupferkonzentrat und Recyclingmaterialien hochreines und hochwertiges Kupfer und verarbeitet es weiter zu Vorprodukten. Altkupfer und diverse andere Recyclingmaterialien werden so wieder dem Wirtschaftskreislauf zugeführt. Pro Jahr produzieren wir mehr als 1 Mio. Tonnen börsenfähiger Kupferkathoden.</div>
+      </div>
+
+    </div>
+
+    <div class="slide_more" id="ar_more_slide">
+
+      <div class="slide_more_header"></div>
+
+      <div class="more_header">
+
+        <div class="more_title">Aurubis das Unternehmen</div>
+        <div class="more_back" onclick="scrollUp('slide_welcome');">Zur Übersicht</div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_pic" id="ar_percent"></div>
+        <div class="left_tit">Zahlen & Fakten</div>
+        <div class="left_txt">Aurubis wurde 1866 als Aktiengesellschaft gegründet. Mit dem Börsengang 1998, nationalen Zusammenschlüssen und internationalen Erweiterungen in den Folgejahren, ist Aurubis heute weltweit ein international agierender Konzern. Die Aurubis-Aktie gehört dem Prime Standard-Segment der Deutschen Börse an und ist im MDAX und dem Global Challenges Index (GCX) gelistet. </div>
+
+        <ul class="left_bullet">
+          <li>1866 Gründung des Unternehmens als Norddeutsche Affinerie Aktiengesellschaft in Hamburg, Deutschland</li>
+          <li>rund 7.400 Mitarbeiter in über 20 Ländern auf drei Kontinenten</li>
+          <li>1.140.000t Kupferprodukte jährlich</li>
+          <li>> 560 Mio. Euro Investition seit 2000 in Umweltschutzmaßnahmen</li>
+          <li>> 99,99 % Kupferanteil enthalten unsere Kupferkathoden mindestens – die hohe Reinheit garantiert die hervorragende Qualität unserer Produkte</li>
+        </ul>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_tit">Standorte von Aurubis</div>
+        <div class="sl_more_fullscreen" id="ar_so"></div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_tit">Der Metallprozess bei Aurubis</div>
+        <div class="sl_more_fullscreen" id="ar_mp"></div>
+
+      </div>
+
+      <div class="sl_more more_right">
+
+        <div class="right_pic" id="ar_baum"></div>
+        <div class="right_tit">Kupfer - ein besonderes Metall</div>
+        <div class="right_txt">
+          Ohne Kupfer wäre unser modernes Leben nicht möglich. Die zunehmende Vernetzung unserer Bürowelt, die steigenden Ansprüche an die Telekommunikation, unser großer Energiebedarf, aber auch die hohen Sicherheits- und Komfortstandards im heutigen Automobilbau sorgen für stetig steigenden Kupferbedarf. Durchschnittlich rund 25 kg Kupfer sind in jedem PKW verbaut – in Modellen der Luxusklasse kann es mehr als das Doppelte sein.
+          <br>
+          Auch in Architektur und im Bauwesen hat Kupfer seinen festen Platz: In unseren Häusern sind neben elektrischen Leitungen oft auch Rohre im Wasser- und Heizungssystem aus Kupfer. Wegen seiner guten Korrosionsbeständigkeit und nicht zuletzt aufgrund seiner Ästhetik wird Kupfer auch vielfach für Bedachungen und Fassadenverkleidungen eingesetzt.
+          <br>
+          <br>
+          An der Atmosphäre bildet Kupfer mit den Jahren eine natürliche Patina, deren Farbe und chemische Zusammensetzung im Wesentlichen von den klimatischen Bedingungen beeinflusst wird. Nach der anfänglichen Brauntönung bildet sich im Laufe der Jahre Patina, deren Farbtöne von gelb- bis blau-grün reichen können. Diese einzigartige Eigenschaft erklärt die Vielzahl der Anwendungsmöglichkeiten von Kupfer im Bauwesen und seine große Verbreitung.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slide" id="slide_env">
+
+    <div class="slide_bg_img" id="env_bg"></div>
+
+    <div class="slide_main" id="main_env">
+
+      <div class="slide_main_blur" id="env_bg"></div>
+      <div class="slide_main_blur_opacity"></div>
+      <div id="env_logo"></div>
+
+      <div class="slide_next" id="env_next" onclick="scrollSide('slide_it'); it_animations();"></div>
+      <div class="slide_prev" id="env_prev" onclick="scrollSide('slide_aurubis');"></div>
+
+      <div id="env_tit">Nachhaltigkeit</div>
+      <div id="env_info">
+        <div id="env_info_more" onclick="scrollDown('slide_env');">&#709; Mehr Erfahren</div>
+        <div id="env_info_text">Wir sind weltweit führend im Umweltschutz und Energieeffizienz und sind uns als energieintensives Unternehmen der Grundstoffindustrie der Verantwortung für Umwelt und Klima bewusst.Durch den Einsatz modernster Technologien minimieren wir unseren ökologischen Fußabdruck. Aurubis-Produkte leisten einen wesentlichen Beitrag zur Energiewende und zur Verbesserung der CO2-Bilanz der Menschen in ihrem Alltag.</div>
+      </div>
+
+    </div>
+
+    <div class="slide_more" id="env_more_slide">
+
+      <div class="slide_more_header"></div>
+
+      <div class="more_header">
+
+        <div class="more_title">Nachhaltigkeit</div>
+        <div class="more_back" onclick="scrollUp('slide_welcome');">Zur Übersicht</div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_pic" id="env_ind"></div>
+        <div class="left_tit">Konzernübergreifende Ziele im Umweltschutz</div>
+        <div class="left_txt">Wir haben uns sowohl konzernübergreifende Ziele im Umweltschutz gesetzt als auch konkrete Ziele für die einzelnen Standorte definiert.
+          Die Wirksamkeit der Ziele und Maßnahmen wird kontinuierlich überprüft. Umwelt- und Energiemanagementsysteme (insbesondere nach ISO 14001, ISO 50001 und z.T. zusätzlich gemäß EMAS) unterstützen ihre Implementierung und Umsetzung. Zielvorgaben werden erfasst, Abweichungen bewertet, Korrekturmaßnahmen eingeleitet und in ihrer Wirksamkeit verfolgt.
+          Wir führen konzernweit einen offenen Dialog mit Behörden und Bürgern und engagieren uns in zahlreichen Projekten. Zudem liegt uns das Engagement und die Weiterbildung unserer Mitarbeiter besonders am Herzen. Beispiele für Schulungen, Aktionstage und Veranstaltungen finden Sie im Umweltreport 2015 und Nachhaltigkeitsbericht 2015.</div>
+
+      </div>
+
+      <div class="sl_more more_right">
+
+        <div class="right_pic" id="env_trophy"></div>
+        <div class="right_tit">Erfolge im Konzernumweltschutz</div>
+        <div class="right_txt">Im Aurubis-Konzern wurde im Durchschnitt der vergangenen Jahre circa ein Drittel der Gesamtinvestitionen für Umweltschutzmaßnahmen aufgewendet. Dadurch und durch den Betrieb modernster, innovativer Anlagentechnologien nimmt Aurubis weltweit eine Spitzenposition im Klima- und Umweltschutz im Bereich der Primär- und Sekundärkupfererzeugung sowie der Weiterverarbeitung zu Kupferprodukten wie Walzblechen, Draht- und Stranggussprodukten ein.
+          Weitere Informationen zu Kennzahlen und Zielen sowie Beispiele für Erfolge und aktuelle Maßnahmen veröffentlichen wir in unser Umwelt- und Nachhaltigkeitsberichterstattung.</div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_tit">Umweltschutz</div>
+        <div class="sl_more_fullscreen" id="env_big"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="slide" id="slide_it">
+
+    <div class="slide_bg_img" id="it_bg"></div>
+
+    <div class="slide_main" id="main_it">
+
+      <div class="slide_main_blur" id="it_bg"></div>
+      <div class="slide_main_blur_opacity"></div>
+      <div id="it_logo"></div>
+
+      <div class="slide_next" id="aurubis_next" onclick="scrollSide('slide_welcome');"></div>
+      <div class="slide_prev" id="aurubis_prev" onclick="scrollSide('slide_env');"></div>
+
+      <div id="it_tit">Aurubis & IT?</div>
+      <div id="it_info">
+        <div id="it_info_more" onclick="scrollDown('slide_it');">&#709; Mehr Erfahren</div>
+        <div id="it_info_text">Intelligent, effizient und nachhaltig: Die digitale Transformation stellt hohe Ansprüche und bringt gleichzeitig spannende Herausforderungen mit sich – insbesondere in der IT. Wir sind Aurubis, eines der weltweit führenden Multimetall-Unternehmen und einer der größten Kupferrecycler der Welt.</div>
+      </div>
+
+    </div>
+
+    <div class="slide_more" id="it_more_slide">
+
+      <div class="slide_more_header"></div>
+
+      <div class="more_header">
+
+        <div class="more_title">Aurubis & IT?</div>
+        <div class="more_back" onclick="scrollUp('slide_welcome');">Zur Übersicht</div>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_pic" id="it_gear"></div>
+        <div class="left_tit">Ihre Aufgaben</div>
+
+        <ul class="left_bullet">
+          <li>Sie wirken bei der Konzeption und Entwicklung von Prototypen im Bereich Produktionsprozesse & IT Innovation mit.</li>
+          <li>Hierbei schaffen Sie innovative und integrative Lösungen im Umfeld des digitalen Arbeitsplatzes.</li>
+          <li>Im Bereich der Bildverarbeitung entwickeln und validieren Sie AI-Technologien.</li>
+          <li>Dabei wenden Sie mathematisch-statistische Methoden und Modelle an.</li>
+          <li>Sie unterstützen bei der Planung und Umsetzung von Projekten.</li>
+          <li>Außerdem supporten Sie das Team im operativen Tagesgeschäft.</li>
+        </ul>
+
+      </div>
+
+      <div class="sl_more more_left">
+
+        <div class="left_pic" ></div>
+        <div class="left_tit">Wir bieten</div>
+
+        <ul class="left_bullet">
+          <li>Bringen Sie Ihre Kompetenzen und Ihre Kreativität in einem als Fair Company 2021 ausgezeichneten Industrieunternehmen ein, das sich den Herausforderungen der digitalen Transformation stellt.</li>
+          <li>In unseren Projekten arbeiten Sie nach agilen Methodiken. Wir bieten Ihnen viel Gestaltungsspielraum und eine hohe Eigenverantwortung.</li>
+          <li>Unter Kollegen begegnen wir uns auf Augenhöhe und entwickeln zusammen innovative Lösungen in einem internationalen Umfeld.</li>
+          <li>Profitieren Sie von flexiblen Arbeitszeiten sowie einer attraktiven Vergütung und umfassenden Sozialleistungen.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

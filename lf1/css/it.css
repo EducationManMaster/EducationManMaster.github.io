@@ -1,0 +1,144 @@
+#slide_it{
+
+  position: absolute;
+  left: 300%;
+
+}
+
+#main_it{  opacity: 0; }
+
+#it_tit{
+
+  position: absolute;
+
+  width: calc(100% - 200px);
+  height: 50%;
+
+  right: 100px;
+
+
+  padding: 50px;
+  padding-top: 100px;
+
+  text-align: right;
+
+  transform: translateY(50%); opacity: 0;
+
+  font-family: 'Bebas Neue', cursive;
+  font-size: 9vw;
+  color: #2196F3;
+
+  z-index: 25;
+
+}
+
+#it_bg{  background-image: url("../img/it.png"); }
+
+#it_info{
+
+  position: absolute;
+
+  width: calc(100% - 200px);
+  height: 50%;
+  bottom: 0;
+
+  left: 100px;
+
+  padding: 50px;
+
+  transform: translateY(50%); opacity: 0;
+
+  z-index: 30;
+
+}
+
+#it_info_more{
+
+  position: absolute;
+
+  width: 250px;
+  height: 65px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+
+  font-size: 22px;
+  color: rgba(255,255,255,0.95);
+  text-align: center;
+  line-height: 65px;
+
+  background-color: #E91E63;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+
+  cursor: pointer;
+  user-select: none;
+
+  z-index: 30;
+
+}
+
+#it_info_text{
+
+  position: relative;
+
+  width: calc(95% - 300px);
+
+  margin-left: 300px;
+  overflow: hidden;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  font-size: 22px;
+  color: rgba(255,255,255,0.85);
+  text-align: justify;
+
+  z-index: 30;
+
+}
+
+#it_logo{
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  transform: translateY(50%); opacity: 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/w_circle.png");
+
+  z-index: 20;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sp_slow_fadein_animation{ animation: general_fadein_ani 1s forwards ease; animation-delay: 0.5s}
+.sp_ar_slide_fade_animation{animation: ar_slide_fade_ani 1s forwards ease; animation-delay: 0.5s}
+@keyframes ar_slide_fade_ani {
+
+  0%{ transform: translateY(50%); opacity: 0;}
+  100%{ transform: translateY(0%); opacity: 1;}
+
+}
+
+
+#it_gear{ background-image: url("../img/gear.svg"); background-size: 75%;}
