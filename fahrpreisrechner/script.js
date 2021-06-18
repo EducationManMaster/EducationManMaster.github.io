@@ -4,7 +4,7 @@ var proMinute = 0.17;
 var proKilometer = 0.51;
 
 
-
+// Auswahl nach Minuten oder Strecke
 function option(id) {
 
   document.getElementById(id).className = "option option_aktiv";
@@ -40,8 +40,10 @@ function option(id) {
 
 }
 
+// Range slider Updaten
 function setRange(value) { document.getElementById("streckenangabe").innerHTML = value + "km" }
 
+//Berechnung Nach Strecke
 function streckeBerechnen() {
 
   var streckeKM = document.getElementById("streckenSlider").value;
@@ -55,6 +57,7 @@ function streckeBerechnen() {
 
 }
 
+// Berechnung nach Minuten
 function dauerBerechnen() {
 
   var von = document.getElementById("timeVON").value;
@@ -79,6 +82,7 @@ function dauerBerechnen() {
 
 }
 
+// Easter Egg
 function zufallsSound() {
 
   var zufall = Math.floor(Math.random() * 1001);
